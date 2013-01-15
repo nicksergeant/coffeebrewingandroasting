@@ -123,7 +123,7 @@ header.main {
 
             a {
                 background: #E1E1E1;
-                border: 4px solid #E1E1E1;
+                border: 4px solid #CCC;
                 display: block;
                 font: normal 63px 'BitstreamBold', $Bitstream;
                 line-height: normal;
@@ -140,14 +140,17 @@ header.main {
         }
     }
     div.slogan {
-        display: block;
-        float: left;
         line-height: 17px;
-        margin: 13px 0 0 20px;
 
-        span {
-            color: #854C30;
-            font-size: 16px;
+        span.inner {
+            display: block;
+            margin-top: 13px;
+            width: 100px;
+
+            span {
+                color: #854C30;
+                font-size: 16px;
+            }
         }
     }
 }
@@ -173,6 +176,14 @@ header.main {
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+    header.main {
+        div.slogan {
+            span.inner {
+                text-align: center;
+                width: auto;
+            }
+        }
+    }
 }
  
 /* Landscape phones and down */
